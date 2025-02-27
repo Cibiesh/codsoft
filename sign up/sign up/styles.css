@@ -1,0 +1,84 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2D6CDF, #153A75); /* Fix: Gradient Background */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    width: 350px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: white; /* Fix: Text visibility */
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    color: #fff;
+}
+
+.input-box label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #ddd;
+    transition: 0.3s ease-in-out;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    color
+}
